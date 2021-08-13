@@ -1,6 +1,6 @@
 # tmux.nvim
 
-A *very* tiny plugin that lets you seamlessly navigate between tmux panes and vim splits
+A *very* tiny plugin that lets you seamlessly navigate between tmux panes and vim splits.
 
 
 # Installation
@@ -26,7 +26,7 @@ First and foremost, you need to add the following to your `.tmux.conf`
 
 ```tmux
 # Smart pane switching with awareness of Vim splits.
-# See: https://github.com/christoomey/vim-tmux-navigator
+# From https://github.com/christoomey/vim-tmux-navigator
 is_vim="ps -o state= -o comm= -t '#{pane_tty}' \
 | grep -iqE '^[^TXZ ]+ +(\\S+\\/)?g?(view|n?vim?x?)(diff)?$'"
 bind-key -n Left if-shell "$is_vim" "send-keys Left" "select-pane -L"
