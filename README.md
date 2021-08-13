@@ -3,7 +3,7 @@
 A *very* tiny plugin that lets you seamlessly navigate between tmux panes and vim splits.
 
 
-# Installation
+## Installation
 
 ```lua
 -- Using packer.nvim
@@ -20,7 +20,7 @@ put the following in your plugin config instead:
 use({ "nathom/tmux.nvim", config = [[require("config.tmux")]] })
 ```
 
-# Usage
+## Usage
 
 First and foremost, you need to add the following to your `.tmux.conf`
 
